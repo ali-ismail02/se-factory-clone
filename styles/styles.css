@@ -9,9 +9,7 @@ body {
     font-size: 16px;
 }
 nav {
-    position: absolute;
-    top: 26px;
-    right: 116px;
+    width: 100%;
     padding: 0 15px;
 }
 .homeImage {
@@ -27,6 +25,7 @@ a {
 }
 .menu {   
     list-style-type: none;
+    flex-wrap: wrap-reverse;
 }
 .logo {
     font-size: 20px;
@@ -47,7 +46,10 @@ a {
 
 .flexing {
     display: flex;
-    background: rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background-image: url(bg.jpg);
+    background-size:cover;
 }
 
 .headImage {
@@ -92,7 +94,7 @@ a {
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .menu {
-        justify-content: center;
+        justify-content: end;
     }
     .logo {
         flex: 1;
@@ -168,9 +170,9 @@ a {
 }
 
 .headText{
-    position: absolute;
-    left: 116px;
-    top: 500px;
+    width: 100%;
+    margin-left: 116px;
+    margin-top: 500px;
     color: white;
 }
 .flexing h1{
@@ -192,4 +194,11 @@ a {
     border: 0px;
     border-radius: 10px;
     font-weight: bold;
+    margin-bottom: 200px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    width: 100%;
 }
